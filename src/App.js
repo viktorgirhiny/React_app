@@ -43,14 +43,14 @@ function App() {
         </div>
 
         <div className='harmadik'>
-          {/* <TrueFocus
+          <TrueFocus
             sentence="Vidd felém az egeret!"
             manualMode={true}
             blurAmount={5}
             borderColor="red"
             animationDuration={0.3}
             pauseBetweenAnimations={1}
-          /> */}
+          />
         </div>
 
         <div className='negyedik'>
