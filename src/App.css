@@ -63,3 +63,17 @@ html
  .masodik > * {
   animation: fadeInUp 1s ease-out;
 }
+
+
+.harmadik
+{
+  background-color: var(--background-dark);
+  padding-bottom: 5vh;
+}
+
+.negyedik
+{
+  background-color: var(--background-dark);
+  padding-top: 5vh;
+  padding-bottom: 12vh;
+}

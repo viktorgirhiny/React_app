@@ -2,6 +2,10 @@ import logo from './logo.svg';
 import './App.css';
 import MagicBento from './MagicBento';
 import SplitText from './SplitText';
+import TrueFocus from './TrueFocus.jsx';
+import Folder from './Folder';
+import SplashCursor from './SplasCursor';
+import ProfileCard from './ProfileCard';
 
 function App() {
   return (
@@ -37,8 +41,55 @@ function App() {
             glowColor="132, 0, 255"
           />
         </div>
+
+        <div className='harmadik'>
+          {/* <TrueFocus
+            sentence="Vidd felém az egeret!"
+            manualMode={true}
+            blurAmount={5}
+            borderColor="red"
+            animationDuration={0.3}
+            pauseBetweenAnimations={1}
+          /> */}
+        </div>
+
+        <div className='negyedik'>
+          <div style={{ height: '600px', position: 'relative', top: '30vh', left: '70vw' }}>
+            <Folder
+              size={1.5}
+              color="#00d8ff"
+              className="custom-folder"
+              items={[
+                { link: "https://example.com/1", content: "" },
+                { link: "https://example.com/2", content: "" },
+                { link: "https://example.com/3", content: "" },
+              ]}
+            />
+          </div>
+        </div>
+
+        <div className='otodik'>
+          <SplashCursor />
+        </div>
+
+        <div className='hatodik'>
+          <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', gap: '50px' }}>
+            <ProfileCard
+              name="Személy Neve"
+              title="Foglalkozása"
+              handle="felhasználónév"
+              status="Online"
+              contactText="Contact Me"
+              avatarUrl=""
+              showUserInfo={true}
+              enableTilt={true}
+              onContactClick={() => console.log('Contact clicked')}
+            />
+          </div>
+        </div>
       </div>
     </div>
+
   );
 }
 
